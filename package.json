@@ -1,0 +1,19 @@
+{
+  "name": "u-wave-web-emojione",
+  "version": "0.0.0",
+  "description": "EmojiOne emoji for the üWave web client chat.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Renée Kooi <renee@kooi.me>",
+  "license": "ISC",
+  "devDependencies": {
+    "emojione": "^2.2.6",
+    "gulp": "^3.9.1",
+    "pify": "^2.3.0"
+  },
+  "dependencies": {
+    "serve-static": "^1.11.1"
+  }
+}
