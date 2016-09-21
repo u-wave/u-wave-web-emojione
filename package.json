@@ -1,6 +1,6 @@
 {
   "name": "u-wave-web-emojione",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "EmojiOne emoji for the üWave web client chat.",
   "scripts": {
     "prepublish": "npm run build",
