@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const path = require('path');
 const fs = require('fs');
+const del = require('del');
 const pify = require('pify');
 const emojione = require('emojione/emoji.json');
 
@@ -31,5 +32,7 @@ gulp.task('json', () => {
     'utf8'
   );
 });
+
+gulp.task('clean', () => del('emoji', 'emoji.json'));
 
 gulp.task('default', ['copy', 'json']);

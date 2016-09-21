@@ -3,17 +3,19 @@
   "version": "0.0.0",
   "description": "EmojiOne emoji for the üWave web client chat.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "npm run build",
+    "build": "gulp clean && gulp"
   },
   "keywords": [],
   "author": "Renée Kooi <renee@kooi.me>",
-  "license": "ISC",
+  "license": "(MIT AND CC-BY-4.0)",
+  "dependencies": {
+    "serve-static": "^1.11.1"
+  },
   "devDependencies": {
+    "del": "^2.2.2",
     "emojione": "^2.2.6",
     "gulp": "^3.9.1",
     "pify": "^2.3.0"
-  },
-  "dependencies": {
-    "serve-static": "^1.11.1"
   }
 }
