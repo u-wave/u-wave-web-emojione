@@ -1,6 +1,6 @@
 # u-wave-web-emojione
 
-[EmojiOne] emoji for the [üWave web client] chat.
+[EmojiOne][] emoji for the [üWave web client][] chat.
 
 ![Screenshot](./example.png)
 
@@ -53,13 +53,12 @@ app.use(createWebClient(uw, {
 
 ## License
 
-[EmojiOne] emoji images are available under the [Creative Commons Attribution
-4.0] license.
+[EmojiOne][] emoji images are available under the [EmojiOne Free License][].
 
-Everything else in this repository is available under the [MIT] license.
+Everything else in this repository is available under the [MIT][] license.
 
 [EmojiOne]: http://emojione.com/
-[Creative Commons Attribution 4.0]: https://creativecommons.org/licenses/by/4.0/
+[EmojiOne Free License]: https://www.emojione.com/developers/free-license
 [MIT]: https://opensource.org/licenses/MIT
 [üWave web client]: https://github.com/u-wave/web
 [üWave CLI]: https://github.com/u-wave/cli
