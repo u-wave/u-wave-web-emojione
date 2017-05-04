@@ -3,13 +3,13 @@ const path = require('path');
 const fs = require('fs');
 const del = require('del');
 const pify = require('pify');
-const emojione = require('emojione/emoji.json');
+const emojione = require('emojione-assets/emoji.json');
 
 const write = pify(fs.writeFile);
 
 const baseDir = path.join(
-  path.dirname(require.resolve('emojione/emoji.json')),
-  './assets/png'
+  path.dirname(require.resolve('emojione-assets/emoji.json')),
+  './png/64'
 );
 
 gulp.task('copy', () =>
@@ -19,10 +19,10 @@ gulp.task('copy', () =>
 
 gulp.task('json', () => {
   const emoji = {};
-  Object.keys(emojione).forEach((name) => {
-    const image = `${emojione[name].unicode}.png`;
-    emoji[name] = image;
-    emojione[name].aliases.forEach((alias) => {
+  Object.keys(emojione).forEach((unicode) => {
+    const image = `${unicode}.png`;
+    emoji[emojione[unicode].shortname.slice(1, -1)] = image;
+    emojione[unicode].shortname_alternates.forEach((alias) => {
       emoji[alias.slice(1, -1)] = image;
     });
   });
