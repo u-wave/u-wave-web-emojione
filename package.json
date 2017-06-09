@@ -13,7 +13,7 @@
     "serve-static": "^1.11.1"
   },
   "devDependencies": {
-    "del": "^2.2.2",
+    "del": "^3.0.0",
     "emojione-assets": "^3.0.0",
     "gulp": "^3.9.1",
     "pify": "^3.0.0"
