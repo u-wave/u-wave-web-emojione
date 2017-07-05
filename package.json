@@ -10,11 +10,11 @@
   "author": "Renée Kooi <renee@kooi.me>",
   "license": "(MIT AND CC-BY-4.0)",
   "dependencies": {
-    "serve-static": "^1.11.1"
+    "serve-static": "^1.12.3"
   },
   "devDependencies": {
     "del": "^3.0.0",
-    "emojione-assets": "^3.0.0",
+    "emojione-assets": "^3.1.0",
     "gulp": "^3.9.1",
     "pify": "^3.0.0"
   }
