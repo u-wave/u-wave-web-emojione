@@ -1,10 +1,12 @@
 {
   "name": "u-wave-web-emojione",
   "version": "2.0.0",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
   "description": "EmojiOne emoji for the üWave web client chat.",
   "scripts": {
     "prepublish": "npm run build",
-    "build": "gulp clean && gulp"
+    "build": "rimraf dist && rollup -c"
   },
   "keywords": [],
   "author": "Renée Kooi <renee@kooi.me>",
@@ -13,9 +15,13 @@
     "serve-static": "^1.12.3"
   },
   "devDependencies": {
-    "del": "^3.0.0",
     "emojione-assets": "^3.1.0",
-    "gulp": "^3.9.1",
-    "pify": "^3.0.0"
+    "is-builtin-module": "^2.0.0",
+    "pify": "^3.0.0",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.55.1",
+    "rollup-plugin-copy": "^0.2.3",
+    "rollup-plugin-json": "^2.3.0",
+    "rollup-plugin-node-resolve": "^3.0.2"
   }
 }
