@@ -43,11 +43,10 @@ import serveStatic from 'serve-static';
 app.use('/assets/emoji', serveStatic('./my-custom-emoji'));
 app.use('/assets/emoji', emojione.middleware());
 app.use(createWebClient(uw, {
-  emoji: Object.assign(
-    {},
-    emojione.emoji,
-    myCustomEmoji
-  ),
+  emoji: {
+    ...emojione.emoji,
+    ...myCustomEmoji
+  },
 }));
 ```
 
