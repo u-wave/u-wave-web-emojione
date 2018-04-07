@@ -1,6 +1,6 @@
 {
   "name": "u-wave-web-emojione",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "main": "dist/u-wave-web-emojione.js",
   "module": "dist/u-wave-web-emojione.es.js",
   "description": "EmojiOne emoji for the üWave web client chat.",
