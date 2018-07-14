@@ -8,7 +8,7 @@
     "node": ">= 8.9"
   },
   "scripts": {
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "build": "rimraf dist && rollup -c"
   },
   "keywords": [],
