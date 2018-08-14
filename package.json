@@ -20,7 +20,7 @@
   "devDependencies": {
     "emojione-assets": "^3.1.0",
     "is-builtin-module": "^2.0.0",
-    "pify": "^3.0.0",
+    "pify": "^4.0.0",
     "rimraf": "^2.6.2",
     "rollup": "^0.64.0",
     "rollup-plugin-copy": "^0.2.3",
