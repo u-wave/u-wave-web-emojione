@@ -20,7 +20,7 @@ Adding `u-wave-web-emojione` to your instance is a three-step process:
 import express from 'express';
 import createWebClient from 'u-wave-web';
 // 1. Add this import 👇
-import emojione from 'u-wave-web-emojione';
+import * as emojione from 'u-wave-web-emojione';
 
 const app = express();
 // ...
