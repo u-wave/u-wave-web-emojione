@@ -30,7 +30,12 @@ export default {
     nodeResolve(),
     emoji('emoji.json'),
     copy({
-      [emojiBaseDir]: path.join(__dirname, path.dirname(pkg.main), './emoji'),
+      targets: [
+        {
+          src: path.join(emojiBaseDir, '*'),
+          dest: path.join(__dirname, path.dirname(pkg.main), './emoji'),
+        },
+      ],
     }),
   ],
 };
